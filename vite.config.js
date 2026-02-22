@@ -14,4 +14,9 @@ export default defineConfig({
     tailwindcss(),   // Scans your JSX for Tailwind classes and builds only the CSS you actually use
   ],
   root: 'src',
+  server: {
+    watch: {
+      usePolling: true,
+    },
+  },
 });
